@@ -1,38 +1,231 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9fafd;
+}
+
+.card {
+  background-color: white;
+  padding: 24px 16px 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerdiv {
+  display: flex;
+  gap: 9px;
+}
+h1 {
+  color: var(--3-very-dark-grey-blue, #1c202b);
+  font-size: 20px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.number {
+  width: 32px;
+  height: 25px;
+  border-radius: 6px;
+  background: var(--1-blue, #0a327b);
+  color: var(--9-white, #fff);
+  font-size: 16px;
+  font-family: Plus Jakarta Sans;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mark {
+  color: var(--4-dark-grey-blue, #5e6778);
+  text-align: right;
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 5px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mark:hover {
+  color: #0a327b;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image1 {
+  width: 39px;
+  height: 39px;
+}
+.name {
+  color: var(--3-very-dark-grey-blue, #1c202b);
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.name:hover {
+  color: #0a327b;
+}
+.name1 {
+  color: var(--4-dark-grey-blue, #5e6778);
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.name1:hover {
+  color: #0a327b;
+}
+.name3 {
+  color: var(--4-dark-grey-blue, #5e6778);
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #5e6778;
+}
+
+.time {
+  color: var(--5-grey-blue, #939cad);
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.chess {
+  color: var(--1-blue, #0a327b);
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.chess:hover {
+  color: #0a327b;
+}
+.info1 {
+  width: 263px;
+  height: 122px;
+  border-radius: 5px;
+  border: 1px solid var(--7-very-light-grey-blue, #dde7ee);
+  background: var(--9-white, #fff);
+}
+.notificationdiv {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+}
+.notification {
+  display: flex;
+  gap: 13px;
+  border-radius: 8px;
+  background: var(--8-snow, white);
+  padding: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.blue {
+  background: var(--8-snow, #f7fafd);
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.red {
+  background-image: url(./images/Oval.svg);
+  display: inline-block;
+  background-size: cover;
+  width: 8px;
+  height: 8px;
+  margin-left: 5px;
+}
+
+.image9 {
+  width: 39px;
+  height: 39px;
+  cursor: pointer;
+}
+
+.image9:hover {
+  transition: 1s;
+  width: 41px;
+  height: 41px;
+}
+
+.nomessage {
+  display: none;
+}
+
+.info {
+  color: var(--4-dark-grey-blue, #5e6778);
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.message {
+  border-radius: 5px;
+  border: 1px solid var(--7-very-light-grey-blue, #dde7ee);
+  background: var(--9-white, #fff);
+  width: 263px;
+  height: 122px;
+  padding: 16px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.message:hover {
+  background-color: #e5effa;
+}
+
+@media (min-width: 1040px) {
+  .card {
+    width: 730px;
+    height: 839px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .info {
+    color: var(--4-dark-grey-blue, #5e6778);
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .message {
+    width: 566px;
+    height: 97px;
   }
 }
